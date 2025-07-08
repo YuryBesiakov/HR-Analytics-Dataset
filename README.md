@@ -1,90 +1,91 @@
-# HR-Analytics-Dataset
-📊 Employee Attrition Prediction
+# 📊 Employee Attrition Prediction — ML Project
 
-📌 Project Overview
-This project explores the HR Analytics Dashboard - Employee Attrition dataset from Kaggle (link) to predict whether an employee is likely to leave the company.
+![Infographic](images/infog.png)
 
-🎯 Objective
-Analyze employee demographic and HR data to understand patterns related to attrition.
+---
 
-Build and evaluate machine learning models to predict attrition.
+## 📌 Project Overview
 
-Gain actionable insights that can help HR teams reduce employee turnover.
+This project analyzes employee attrition patterns using the [HR Analytics Dashboard - Employee Attrition Dataset](https://www.kaggle.com/datasets/anubhav761/hr-analytics-dashboard-employee-attrition) from Kaggle. The goal is to predict whether an employee is likely to leave the company using machine learning techniques and also to model and predict monthly income based on various individual and job-related features.
 
-🗂️ Dataset
-Source: Kaggle HR Analytics Dashboard - Employee Attrition
+---
 
-Rows/Columns: (Add the count after EDA)
+## 🎯 Objectives
 
-Target variable: Attrition (Yes/No)
+- Perform **Exploratory Data Analysis (EDA)** to understand key drivers of attrition.
+- Build and evaluate classification models (e.g., Logistic Regression, Random Forest, XGBoost).
+- Communicate insights that HR teams can use to reduce attrition risk.
 
-🔍 Project Steps
-Exploratory Data Analysis (EDA)
+---
 
-Data types, missing values, empty strings
+## 📁 Project Structure
 
-Distributions, correlations, and trends
+```
+employee-attrition-ml/
+│
+├── module/                    # Your Python module or notebook(s)
+├── images/
+│   └── infog.png              # Infographic
+├── README.md                  # Project overview
+└── requirements.txt           # (Optional) dependencies
+```
 
-Visualizations: attrition by department, age, salary, etc.
+---
 
-Data Preprocessing
+## 📈 About the Dataset
 
-Handle missing values/blanks
+- **Source:** [Kaggle HR Analytics Dashboard - Employee Attrition](https://www.kaggle.com/datasets/anubhav761/hr-analytics-dashboard-employee-attrition)  
+- **Records:** 1,470 employees  
+- **Features:** Demographics, job satisfaction, compensation, career progression, and more.
+- **Target:** `Attrition` — whether the employee has left the company (Yes/No). `MonthlyIncome` - Monthly income of the employee.
 
-Encode categorical variables
+<details>
+<summary>📄 Click for column descriptions</summary>
 
-Feature scaling & selection
+1. **Age** — Employee age  
+2. **Attrition** — Target: Has the employee left? (Yes/No)  
+3. **Business Travel** — Travel frequency (Rarely, Frequently, Non-Travel)  
+4. **Daily Rate**, **Hourly Rate**, **Monthly Income**, etc. — Compensation details  
+5. **Department**, **Job Role**, **Job Level** — Position details  
+6. **Job Satisfaction**, **Environment Satisfaction**, **Relationship Satisfaction** — Surveys  
+7. **Over Time**, **Distance From Home**, **Years At Company**, **Years Since Last Promotion**, and more.
 
-Modeling
+</details>
 
-Baseline models: Logistic Regression
+---
 
-Advanced models: Random Forest, XGBoost
+## 🧪 Main Steps
 
-Model comparison: accuracy, F1-score, ROC curve
+1. **EDA:** Explore distributions, missing values, and correlations.
+2. **Data Preprocessing:** Handle missing data, encode categorical variables, scale features.
+3. **Modeling:** Train baseline & advanced classifiers.
+4. **Evaluation:** Confusion matrix, ROC-AUC, precision, recall, feature importance.
+5. **Insights & Next Steps:** Suggest HR actions, limitations, and possible improvements.
 
-Insights
+---
 
-Which features most influence attrition?
+## ⚙️ How to Run
 
-How can HR teams act on these insights?
+- Clone the repo
+- Install dependencies (if you have a `requirements.txt`)
+- Run the notebook(s) in the `module/` folder step-by-step
 
-✅ Key Results
-Best model: (e.g., XGBoost with 85% accuracy)
+```bash
+git clone https://github.com/YuryBesiakov/HR-Analytics-Dataset
+```
 
-Top features: (e.g., JobRole, OverTime, MonthlyIncome)
+---
 
-⚙️ How to Run
-Clone the repo.
+## ✅ Key Results
 
-Install requirements:
+Example: *Random Forest achieved ~85% accuracy and identified overtime and job satisfaction as top attrition drivers.*
 
-bash
-Kopieren
-Bearbeiten
-pip install -r requirements.txt
-Open the Jupyter Notebook:
+---
 
-bash
-Kopieren
-Bearbeiten
-jupyter notebook
-📂 Project Structure
-Kopieren
-Bearbeiten
-.
- notebook.ipynb
- images/
-    infog.png
- README.md
- requirements.txt
- .gitignore
-🚀 Future Work
-Try more advanced tuning or deep learning models.
+## 🚀 Next Steps
 
-Deploy as a simple web app (Streamlit/Gradio).
+- Add more advanced explainability (e.g., SHAP or LIME)
+- Test additional models
+- Deploy a simple demo app (Streamlit or Gradio)
 
-Explore employee retention strategies.
-
-✨ Author
-Your Name - Your GitHub Profile
+---
