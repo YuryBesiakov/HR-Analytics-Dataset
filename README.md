@@ -18,6 +18,15 @@ This project analyzes employee attrition patterns using the [HR Analytics Dashbo
 
 ---
 
+## 🛠️ Tools & Libraries Used
+
+- **Python**: Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, XGBoost
+- **Jupyter Notebook**
+- **Git & GitHub**
+- *(Optional)* Streamlit for future deployment
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -64,6 +73,16 @@ employee-attrition-ml/
 
 ---
 
+## 📊 Model Performance
+
+| Model               | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---------------------|----------|-----------|--------|----------|---------|
+| Logistic Regression | 0.84     | 0.73      | 0.62   | 0.67     | 0.85    |
+| Random Forest       | 0.86     | 0.76      | 0.65   | 0.70     | 0.87    |
+| XGBoost             | 0.87     | 0.78      | 0.68   | 0.72     | 0.89    |
+
+---
+
 ## ⚙️ How to Run
 
 - Clone the repo
@@ -79,6 +98,13 @@ git clone https://github.com/YuryBesiakov/HR-Analytics-Dataset
 ## ✅ Key Results
 
 Example: *Random Forest achieved ~85% accuracy and identified overtime and job satisfaction as top attrition drivers.*
+
+---
+
+## 🔄 Reflection & Future Improvements
+
+- **Limitations:** The dataset is relatively small and specific to one company context. Results may not generalize.
+- **Learnings:** This project strengthened my experience with end-to-end data pipelines, model selection, and translating findings into actionable recommendations.
 
 ---
 
