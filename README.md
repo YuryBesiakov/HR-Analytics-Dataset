@@ -1,6 +1,6 @@
 # 📊 Employee Attrition Prediction — ML Project
 
-![Infographic](images/Infog.png) 
+![Infographic](images/infog.png) 
 
 ---
 
